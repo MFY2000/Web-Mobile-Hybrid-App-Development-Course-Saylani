@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-nav{
+    padding: 10px 100px;
+    margin-right: -300px;
+    font-size: 20px;
+}
+.nav-item{
+    padding: 0px 20px;
+    font-weight: bold;
+}
+.heaer{
+    background-image: url('');
+    height: 100vh;
+}
+.headview{
+    text-align: center;
+    height: 500px;
+}.hone{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+.hed_btn{
+   margin-top: 150px;
+}
