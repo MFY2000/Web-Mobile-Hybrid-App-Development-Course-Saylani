@@ -13,7 +13,7 @@ body{
     font-weight: bold;
 }
 body{
-    background-image: url('../Images/Main/backgroundImage.jpg');
+    background-image: url('Images/Main/backgroundImage.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
