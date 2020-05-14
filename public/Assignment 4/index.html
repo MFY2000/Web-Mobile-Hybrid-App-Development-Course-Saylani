@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Main page</title>    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Kosugi+Maru|Montserrat|Mukta|Open+Sans+Condensed:300|Oswald|PT+Sans|Roboto+Mono|Ruslan+Display|Slabo+27px|Ubuntu|lobster" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <!--   -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="theme.css">
+ <link rel="stylesheet" href="product.css">
+
+</head>
+
+<body id="table">
+    <div id="not" style="background-color: rgba(0, 0, 0, 0.5);color: white;border: none;position: fixed;bottom: 0%;width: 100%;text-align: justify;z-index:555 ;">
+    
+        <span style="width: 100%;">For black background and white color It will auto close after 15sec
+        <i class="fas fa-times" onclick="remove()" id="not"  style="float:right;font-size:xx-large"></i>
+
+             <label class="switch" style="float: right;">
+                <input class="switch-input" id="0.1" type="checkbox" />
+                <span class="switch-label" data-on='on' onclick="change(0,1),alert('You may change the fonts-style by Setting >> fonts-style >> Then change you may like')" data-off="Off"></span>
+                <span class="switch-handle"></span> <br>
+              </label>
+
+              <i onclick="location.href='theme.html'"  style="float:right;font-size:xx-large;padding-right: 1%;">
+                    &#9776;
+                </i>
+
+    </span>
+       
+
+
+
+
+
+
+
+
+
+
+
+  
+          
+    </div>
+
+
+  <div class="Main">
+    <ul>
+      <li style="float: right;line-height:95px">
+        <div id="mySidenav" class="sidenav">
+          <div id="white" href="javascript:void(0)">
+      <div id="closebtn" class="closebtn" onclick="closeNav()">&times;</div>
+          </div>
+<div id="center" style="line-height:normal;"></div>
+        </div>
+      
+      
+      
+   <span id="mainfaha" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      
+      
+      
+      </li>
+      
+        <li style="float: right;line-height:95px"><a class="Menu" href="index.html">HOME</a></li>
+      
+
+      <!-- <li class="Menu" id="li2"> -->
+          <li class="Menu" style="line-height:130px ">
+          <div class="dropdown" style="line-height:normal">CATEGORIES<br>
+            <i class="fa fa-caret-down" style="line-height:normal"></i>
+
+            <div class="dropdown-content"  style="float: right;line-height:normal">       
+                <a href='caterages/Men.html'>MEN</a>
+                <a href='caterages/women.html'>WOMEN</a>
+                <a href='caterages/shoes.html'>SHOES</a>
+                <a href='caterages/Glasses.html'>GLASSES</a>
+                <a href='caterages/watch.html'>WATHES</a>
+                <a href='caterages/Bag.html'>BAGS</a>
+                <a href='caterages/capes.html'>CAPS</a>
+                <a href='caterages/Jewlere.html'>JEWELLRY</a>
+
+            </div>
+          </div>
+          </li>
+               
+          
+          
+          
+          <li style="float: right;line-height:95px">
+          <a class="Menu" href="Contact.html" >CONTACT
+          </a>
+         </li>
+         <img src="black (1).jpg" alt="logomain" id="logo">
+         <li style="float: right;line-height:85px"><a class="Menu" href="favourite.html" id="sup"></a>
+      </li>
+
+
+
+
+      <!-- Here i will place labels after few day -->
+      <!-- <li id="li2" class="top">
+      FAHAD
+      <br>MEMON
+      </li> -->
+
+      
+        
+      
+        <li style="float: right;line-height:95px"><a class="Menu" href="">
+        DEALS</a>
+       </li>
+      
+      
+       <li style="float: right;line-height:95px"><a class="Menu" href="About us.html">ABOUT
+      </a>
+       </li>
+
+
+     
+        <li style="float: right;line-height:95px"> <a class="Menu" id="if" href="login.html"></a></li>
+      
+    </ul>
+  
+</div>
+  
+<marquee behavior="scroll" direction="left"><h1>Our Serives are only availible in karachi at cash delivery</h1></marquee>
+
+
+  <div style="text-align: center">
+    <div id="slider">
+
+    </div>
+
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+  </div>
+
+  <div id="tail" style="display: inline-block">
+    <h1>Bages For Women<a href="caterages/Bag.html" class="formore">More</a></h1>
+    <hr>
+
+    <div class="firstrow">
+
+      <img src="image/Bag/1.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',0),shower()"class="0">
+      <b style="display:block">$15.5 dollar<br><s>$18</s></b>
+      <div id="maindiv">
+        <button class="overlay" onclick="fahad(0)">
+          <i class="fas fa-heart" id="0"></i>
+        </button>
+        <button class="overlay1" onclick="fahad2(0)">
+          <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="firstrow">
+
+      <img src="image/Bag/2.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',1),shower()"class="1">
+      <b style="display:block">$12 dollar
+        <br>
+        <s>$15</s>
+      </b>
+      <div id="maindiv">
+        <button class="overlay" onclick="fahad(1)">
+          <i class="fas fa-heart" id="1"></i>
+        </button>
+        <button class="overlay1" onclick="fahad2(1)">
+          <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+        </button>
+      </div>
+
+
+    </div>
+    <div class="firstrow">
+
+      <img src="image/Bag/3.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',2),shower()"class="2">
+      <b style="display:block">$18.5 dollar
+        <br>
+        <s>$27</s>
+      </b>
+      <div id="maindiv">
+        <button class="overlay" onclick="fahad(2)">
+          <i class="fas fa-heart" id="2"></i>
+        </button>
+        <button class="overlay1" onclick="fahad2(2)">
+          <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+        </button>
+      </div>
+
+    </div>
+    <div class="firstrow">
+      
+      <img src="image/Bag/4.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',3),shower()"class="3">
+      <b style="display:block">$19 dollar
+        <br>
+        <s>$20</s>
+      </b>
+      <div id="maindiv">
+          <button class="overlay" onclick="fahad(3)">
+            <i class="fas fa-heart" id="3"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(3)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+        </div>
+  
+     </div>
+    <h1>Shoes For Men
+<a href="caterages/shoes.html" class="formore">More</a>
+
+    </h1>
+    <hr>
+    <div class="firstrow"> 
+
+      <img src="image/Shoes/37691230_10156566163562495_2646889208089673728_n.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',4),shower()"class="4">
+      <b style="display:block">$15.5 dollar
+        <br>
+        <s>$18</s>
+      </b> <div id="maindiv">
+          <button class="overlay" onclick="fahad(4)">
+            <i class="fas fa-heart" id="4"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(4)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+        </div>
+  
+  
+    </div>
+
+    <div class="firstrow">
+
+      <img src="image/Shoes/37649837_10156566163622495_2578048033455341568_n.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',5),shower()"class="5">
+      <b style="display:block">$15.5 dollar
+        <br>
+        <s>$18</s>
+      </b> <div id="maindiv">
+          <button class="overlay" onclick="fahad(5)">
+            <i class="fas fa-heart" id="5"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(5)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+        </div>
+  
+  
+    </div>
+    <div class="firstrow">
+
+      <img src="image/Shoes/37677747_10156566163817495_522248910589132800_n.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',6),shower()"class="6">
+      <b style="display:block">$15 dollar
+        <br>
+        <s>$18</s>
+      </b> <div id="maindiv">
+          <button class="overlay" onclick="fahad(6)">
+            <i class="fas fa-heart" id="6"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(6)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+        </div>
+  
+  
+    </div>
+    <div class="firstrow">
+
+      <img src="image/Shoes/37684797_10156566163672495_5111151042339274752_n.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',7),shower()"class="7">
+      <b style="display:block">$15.5 dollar
+        <br>
+        <s>$18</s>
+      </b> 
+      <div id="maindiv">
+          <button class="overlay" onclick="fahad(7)">
+            <i class="fas fa-heart" id="7"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(7)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+    </div>
+  </div>
+    <h1>Men<a href="caterages/Men.html" class="formore">More</a></h1>
+    <hr>
+    <div class="firstrow">
+
+      <img src="image/Men/20057861.jpg" alt="bag" class="Bag" onclick="localStorag.setIteme('any',8),shower()" class="8">
+      <b style="display:block">$10 dollar
+        <br>
+        <s>$15</s>
+      </b> <div id="maindiv">
+          <button class="overlay" onclick="fahad(8)">
+            <i class="fas fa-heart" id="8"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(8)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+    </div>
+    </div>
+    <div class="firstrow">
+
+      <img src="image/Men/20083458.jpg" alt="bag" class="Bag" onclick="localStorag.setIteme('any',9 ),shower()"class="9">
+      <b style="display:block">$16 dollar
+        <br>
+        <s>$19 </s>
+      </b> <div id="maindiv">
+          <button class="overlay" onclick="fahad(9)">
+            <i class="fas fa-heart" id="9"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(9)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>    </div>
+    </div>
+
+    <div class="firstrow">
+
+      <img src="image/Men/20092163.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',10),shower()"  class="10">
+      <b style="display:block">$15.5 dollar
+        <br>
+        <s>$18</s>
+      </b>
+      <div id="maindiv">
+          <button class="overlay" onclick="fahad(10)">
+            <i class="fas fa-heart" id="10"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(10)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>
+    </div>
+  </div>
+
+    <div class="firstrow">
+      <img src="image/Men/images.jpg" alt="bag" class="Bag" onclick="localStorage.setItem('any',11),shower()"  class="11">
+      <b style="display:block">$15.5 dollar
+        <br>
+        <s>$18</s>
+      </b>
+      <div id="maindiv">
+          <button class="overlay" onclick="fahad(11)">
+            <i class="fas fa-heart" id="11"></i>
+          </button>
+          <button class="overlay1" onclick="fahad2(11)">
+            <i class="fas fa-thumbs-up fa-flip-vertical"></i>
+          </button>   </div>
+    </div>
+
+    <div class="links">
+      <h1 id="moreh1"><a href="more.html">More</a></h1>
+      
+    </div>
+    <hr>
+  <!-- for end of the page -->
+  <div id="end" style="background-color: black;color: white;">
+    <div class="secondEnd">
+      <h2>contact us</h2>
+      <p>
+        <b>PHONE NUMBER:</b>03**-*********</p>
+      <p>
+        <b>Tell Free:</b>021-*******</p>
+      <p>
+        <b>Email</b>Fa******4*g***.com</p>
+    </div>
+    <div class="thirdEnd">
+      <h2>Head Office</h2>
+      <p>XXXX---XXX</p>
+    </div>
+    <div class="fourEnd">
+      <a href='' class="fa fa-facebook"></a>
+      <a href='' class="fa fa-twitter"></a>
+      <a href='' class="fa fa-google"></a>
+      <a href='' class="fa fa-linkedin"></a>
+      <a href='' class="fa fa-youtube"></a>
+      <a href='' class="fa fa-instagram"></a>
+      <a href='' class="fa fa-skype" ></a>
+      <br>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal content -->
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+  <span class="close" style="margin:auto;font-size: xx-large;color: black;position: absolute;top:12%;right:10%;"><i class="fas fa-times" style="font-size: xx-large"></i></span>
+  <div style="height:350px;">    
+  <span  style="width:10%; height:100%;" >
+          <img src="" alt="" id="image" style="width:30%; height:75%;float: left;margin-top:5% ">
+  </span>
+  <span style="float: right;padding-right: 20%;">
+<h1 id="h1"></h1>
+              <p id="p1">After the discount the price <b id="p2"></b><br><s id="s1"></s></p>
+  <p>Quantity
+  <input type="number" min="0" max="25" value="1" name="" id="number" onchange="calculateTotal()" width="40px">
+  </p>         <p id="prize"></p>
+  
+  
+              <div id="button" style="line-height: 30px"></div>
+          <button id="order" onclick="hello()">Order</button>
+  <br>
+  <br>
+  
+          <a href="product.html" style="float: right;padding-right: 50%;line-height:unset;font-size: larger">Veiws in full screen</a>
+      </div>
+    </div>
+<span onclick="add()"style="position: absolute;top: 35%;right: 10%;font-size: xx-large;"><i class="fas fa-angle-right" style="font-size: larger"></i></span>
+<span onclick="substract()" style="position: absolute;top: 35%;left:10%;font-size: xx-large;"><i class="fas fa-angle-left" style="font-size: larger"></i></span>
+  </div>
+
+  
+
+
+</body>
+<script src="product.js"></script>
+
+<script src="theme.js"></script>
+<script src="js.js"></script>
+<script> 
+ 
+    
+ function hello(){
+            if(document.getElementById("if").innerHTML == "login"){
+                alert("Login")
+                location.href="login.html"
+            }
+            else(alert("A demo website"))
+        }
+ 
+ var images = [1, 2, 3, 4,5,6,7,8];
+    var totalImages = images.length;
+    var currentImage = 0;
+    showNext();
+  
+  
+  
+  function showNext() {
+  if (currentImage == totalImages) currentImage = 0;
+  document.getElementById("slider").innerHTML = "<img src='image/Deals/index" + images[currentImage] + ".jpg' class='setValue' />"
+  dotCircles()
+  currentImage++;
+}
+
+setInterval(function () {
+  showNext();
+}, 2000);
+function dotCircles() {
+  var a = document.getElementsByClassName("circles");
+  for (var i = 0; i < a.length; i++) {
+    if (i == currentImage) {
+      a[i].id = "changeBackground";
+    }
+    else {
+      a[i].id = "removeBackground";
+    }
+
+  }
+}
+load()
+function load(){
+
+    setTimeout(function(){remove()}, 15000);
+
+}
+
+</script>
+</html>

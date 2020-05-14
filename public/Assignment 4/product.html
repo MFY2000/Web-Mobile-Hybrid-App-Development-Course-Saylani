@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title id="title">Document</title>    
+<link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Kosugi+Maru|Montserrat|Mukta|Open+Sans+Condensed:300|Oswald|PT+Sans|Roboto+Mono|Ruslan+Display|Slabo+27px|Ubuntu|lobster" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Style.css">
+
+<style>
+*{
+    text-align: center;
+    /* font-family: lobster; */
+    font-size: medium;
+}
+#h1{
+    font-size: xx-large 
+}
+#image{
+border: thin
+}
+button{
+    padding: 1%;
+margin: 1%;
+text-align: center;
+font-size:large;
+width: 10%;
+}
+
+#farvouite{
+    background-color: red;
+    color: white;
+
+}
+#order{
+    background-color: green;
+    color: white;
+}
+#p2,#s1{display: inline;}
+</style></head>
+ 
+<body id="table">
+
+  
+ 
+
+  <div class="Main">
+    <ul>
+      <li>
+        <div id="mySidenav" class="sidenav">
+          <div id="white" href="javascript:void(0)">
+      <div id="closebtn" class="closebtn" onclick="closeNav()">&times;</div>
+          </div>
+<div id="center" style="line-height:normal;"></div>
+        </div>
+      
+      
+      
+   <span id="mainfaha" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      
+      
+      
+      </li>
+      
+        <li><a class="Menu" href="index.html">HOME</a></li>
+      
+
+      <!-- <li class="Menu" id="li2"> -->
+          <li class="Menu" style="line-height:130px ">
+                    <div class="dropdown" style="line-height:normal">CATEGORIES<br>
+            <i class="fa fa-caret-down"></i>
+
+            <div class="dropdown-content">       
+                <a href='caterages/Men.html'>MEN</a>
+                <a href='caterages/women.html'>WOMEN</a>
+                <a href='caterages/shoes.html'>SHOES</a>
+                <a href='caterages/Glasses.html'>GLASSES</a>
+                <a href='caterages/watch.html'>WATHES</a>
+                <a href='caterages/Bag.html'>BAGS</a>
+                <a href='caterages/capes.html'>CAPS</a>
+                <a href='caterages/Jewelry.html'>JEWELLRY</a>
+
+            </div>
+          </div>
+          </li>
+               
+          
+          
+          
+          <li>
+          <a class="Menu" href="Contact.html" >CONTACT
+          </a>
+         </li>
+
+
+
+      <!-- Here i will place labels after few day -->
+      <!-- <li id="li2" class="top">
+      FAHAD
+      <br>MEMON
+      </li> -->
+
+      <img src="black (1).jpg" alt="logomain" id="logo">
+      
+      <li><a class="Menu" href="favourite.html" id="sup" style="height: 2%;">FAVOURITES</a>
+      </li>
+        
+      
+        <li><a class="Menu" href="">
+        DEALS</a>
+       </li>
+      
+      
+       <li><a class="Menu" href="About us.html">ABOUT
+      </a>
+       </li>
+
+
+     
+        <li> <a class="Menu" id="if" href="login.html"></a></li>
+      
+    </ul>
+  
+  </div>
+ 
+
+
+  <div class="Middle">
+    <h1 id="h1"></h1>
+    <img src="" alt="" id="image">
+
+
+    <p id="p1">After the discount the price <p id="p2"></p><s id="s1"></s></p>
+<p>Quantity you want to order
+  <input min="0" max="25" type="number" id="number" value="1" class="inpQty" name="qty" id="qty" onchange="calculateTotal()">
+
+</p>
+    <p id="prize"></p>
+
+
+    <br><br>
+    <div id="button"></div>
+<button id="order" onclick="hello()">Order</button>
+</div>
+<!-- for end of the page -->
+<div id="end" style="background: black; color: white;">
+        <div class="secondEnd">
+          <h2>contact us</h2>
+        <p><b>PHONE NUMBER:</b>03**-*********</p>
+    <p><b>Tell Free:</b>021-*******</p>
+    <p><b>Email</b>Fa******4*g***.com</p>
+        </div>
+        <div class="thirdEnd">
+    <h2>Head Office</h2>
+    <p>XXXX---XXX</p>
+     </div>
+    <div class="fourEnd">
+      <a href='' class="fa fa-facebook"></a>
+    <a href='' class="fa fa-twitter"></a>
+    <a href='' class="fa fa-google"></a>
+    <a href='' class="fa fa-linkedin"></a>
+    <a href='' class="fa fa-youtube"></a>
+    <a href='' class="fa fa-instagram"></a>
+    <a href='' class="fa fa-skype"></a>
+    <br>
+    <label for="text">Enter Any For Question<br>
+      <input type="text" title="Enter Any For Question" /></label>
+      <input type="submit" name="submit">
+    <br>
+    <p></p><br>
+   
+    </div>
+      </div>
+    
+           
+            
+            </body>
+    <script>
+    
+    
+    function hello(){
+            if(document.getElementById("if").innerHTML == "login"){
+                alert("Login")
+                location.href="login.html"
+            }
+            else(alert("A demo website"))
+        }
+// for any product     
+
+var obj =[
+{name:"Bages For Women",src : "image/Bag/1.jpg",price:"18",s:"$15.5dollar"},
+{name:"Bages For Women",src : "image/Bag/2.jpg",price:"12",s:"$15dollar"},
+{name:"Bages For Women",src : "image/Bag/3.jpg",price:"18.5",s:"$27dollar"},
+{name:"Bages For Women",src : "image/Bag/4.jpg",price:"19",s:"$20dollar"},
+
+//shoes
+
+{name:"shoes for men",src :"image/Shoes/37691230_10156566163562495_2646889208089673728_n.jpg",price:"15.5",s:"$18dollar"},
+
+{name:"Shoes For Men",src : "image/Shoes/37649837_10156566163622495_2578048033455341568_n.jpg",price:"15.5",s:"$18dollar"},
+
+{name:"Shoes for Men",src:"image/Shoes/37677747_10156566163817495_522248910589132800_n.jpg",price:"15",s:"$18dollar"}
+,
+{name:"Shoes for Men",src:"image/Shoes/37684797_10156566163672495_5111151042339274752_n.jpg",price:"15.5",s:"$18dollar"}
+//for men
+,
+{name:"Men",src:"image/Men/20057861.jpg",price:"10",s:"$15dollar"}
+,
+{name:"Men",src:"image/Men/20083458.jpg",price:"11.5",s:"$19dollar"}
+,
+{name:"Men",src:"image/Men/20092163.jpg",price:"10",s:"$15dollar"}
+,
+{name:"Men",src:"image/Men/images.jpg",price:"15",s:"$18dollar"},
+//for women
+{name:"women",src:"image/Women/download (5).jpeg",price:"12",s:"$ 15 dollar"}
+,
+{name:"women",src:"image/Women/images (2).jpeg",price:"15",s:"$ 18 dollar"}
+,
+{name:"women",src:"image/Women/images (4).jpeg",price:"15",s:"$ 18 dollar"}
+,
+{name:"women",src:"image/Women/IMG_20180723_220552.jpg",price:"19.5",s:"$ 28 dollar"}
+,
+{name:"women",src:"image/Women/IMG_20180723_221331.jpg",price:"18",s:"$ 19 dollar"}
+,
+{name:"women",src:"image/Women/IMG_20180727_112633.jpg",price:"19.5",s:"$ 28 dollar"}
+,
+{name:"women",src:"image/Women/IMG_20180727_113239.jpg",price:"10",s:"$ 15 dollar"},
+
+//shoes
+{name:"Shoes",src:"image/Shoes/37685222_10156566164007495_8106573861497077760_n.jpg",price:"15",s:"$16.5dollar"},
+{name:"Shoes",src:"image/Shoes/37747584_10156566163757495_5424812585570533376_n.jpg",price:"12.5",s:"$16dollar"},
+{name:"Shoes",src:"image/Shoes/37757620_10156566163707495_8436021209132433408_n.jpg",price:"15.5",s:"$18dollar"},
+{name:"Shoes",src:"image/Shoes/37785695_10156566163902495_18959025026629632_n.jpg",price:"25.2",s:"$30dollar"},//for Glasses
+{name:"Glass",src:"image/Glasses/10031166.jpg",price:"25.2",s:"$30dollar"},
+{name:"Glass",src:"image/Glasses/10347438.jpg",price:"25.2",s:"$30dollar"},
+{name:"Glass",src:"image/Glasses/10782480.jpg",price:"25.2",s:"$30dollar"},
+// //WATCH
+{name:"watch",src:"image/watches/1.jpg",price:"30",s:"$ 32 dollar"},
+{name:"watch",src:"image/watches/2.jpg",price:"30",s:"$ 32 dollar"},
+{name:"watch",src:"image/watches/3.jpg",price:"33",s:"$ 36 dollar"},
+{name:"watch",src:"image/watches/4.jpg",price:"28",s:"$ 30 dollar"},
+//caps
+{name:"Caps",src:"image/caps/10760100.jpg",price:"12",s:"$ 15 dollar"}
+,
+{name:"Caps",src:"image/caps/20022757.jpg",price:"15",s:"$ 18 dollar"}
+,
+{name:"Caps",src:"image/caps/20032691.jpg",price:"15",s:"$ 18 dollar"}
+,
+{name:"Caps",src:"image/caps/20052429.jpg",price:"19.5",s:"$ 28 dollar"}
+,
+{name:"Caps",src:"image/caps/20076239.jpg",price:"18",s:"$ 19 dollar"}
+,
+{name:"Jewelry",src:"image/Jewelry/IMG_20180723_220811.jpg",price:"82",s:"$  85 dallor"},
+{name:"Jewelry",src:"image/Jewelry/IMG_20180723_220834.jpg",price:"55",s:"$ 58 dallor"},
+{name:"Jewelry",src:"image/Jewelry/IMG_20180723_220857.jpg",price:"45",s:"$ 48 dallor"},
+{name:"Jewelry",src:"image/Jewelry/IMG_20180723_221001.jpg",price:"39.5",s:"$ 48 dallor"},
+{name:"Jewelry",src:"image/Jewelry/IMG_20180723_221033.jpg",price:"59.5",s:"$ 68 dallor"},
+]
+
+
+
+
+
+
+
+var h = localStorage.getItem("any")
+
+document.getElementById("button").innerHTML= "<button onclick='fahad("+h +")'><i class='fas fa-heart' id="+h +"></i></button><button onclick='fahad2("+h +")'><i class='fas fa-thumbs-up fa-flip-vertical'></i></button>";
+
+
+document.getElementById("title").innerHTML= obj[h].name;
+var v = document.getElementById("h1").innerHTML = obj[h].name,
+s =document.getElementById("image").setAttribute("src", obj[h].src );
+c=document.getElementById("p2").innerHTML ="price : $ " + obj[h].price + " dollar";
+c=document.getElementById("prize").innerHTML ="$ " + obj[h].price + " dollar";
+t=document.getElementById("s1").innerText = obj[h].s
+
+//for more or less
+
+function calculateTotal(){
+  var price = obj[h].price
+var number = document.getElementById("number").value;
+var total = (number*price)
+
+document.getElementById("prize").innerHTML="$ "+total + " dollar";
+}
+    
+    </script>
+<script src="js.js"></script><script src="theme.js"></script>
+</html>

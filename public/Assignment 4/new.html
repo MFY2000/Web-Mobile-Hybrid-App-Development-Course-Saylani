@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Kosugi+Maru|Montserrat|Mukta|Open+Sans+Condensed:300|Oswald|PT+Sans|Roboto+Mono|Ruslan+Display|Slabo+27px|Ubuntu|lobster" rel="stylesheet">
+    <style>
+    form{
+text-align: center
+
+    }
+    
+    
+    </style>
+</head>
+<body id="table">
+        <div id="head" style="width: 100%;background: black;color: white ; font-family: lobster;text-align: center">Fahad <br>Memon</div>
+<br><br>
+
+
+
+<form action="" onsubmit="check()">
+<input type="text" id="name" placeholder="Enter Name">
+<br>
+<br>
+<input type="submit" id="" value="Ok">
+
+
+
+
+
+</form>    
+</body>
+<script>
+ 
+
+
+function check(){
+    
+   var save =  document.getElementById("name").value;
+    localStorage.setItem("login",save)
+    
+    window.open("index.html")
+    
+    window.close()
+    
+}
+
+
+
+</script>
+</html>
+
