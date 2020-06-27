@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        //Question:1
+        var firstName = prompt("Enter your First Name");
+        var lastName = prompt("Enter your Last Name");
+        var fullName = firstName + lastName;
+        alert(fullName);
+        //Question:2
+        var mobile = prompt("Enter your Favorite Mobile Phone Model");
+        document.write("<hr>My Favorite Mobile Phone Model : " + mobile + "<br>Length of string : " + mobile.length);
+        //Question:3
+        var n = "Pakistani";
+        document.write("<hr>string : " + n + "<br>Index of 'n' " + n.indexOf("n"))
+        //Question:4
+        var l = "Hello World";
+        document.write("<hr>string : " + l + "<br>Last Index of 'l' " + l.lastIndexOf("l"))
+        //Question:5
+        document.write("<hr>string : " + n + "<br> Character at index 3 : " + n.charAt(3));
+        //Question:6
+        var hyder = "Hyderabad"
+        document.write("<hr>City: " + hyder + "<br>After Replacement " + hyder.replace("Hyder", "Islam"));
+        //Question:7
+        var message = "Ali and Sami are best friends. They play cricket and football together.";
+        document.write("<hr>Message: " + message + "<br>After Replacement :" + message.replace(/and/g, "&"));
+        //Question:8
+        var integerString = "427";
+        var num = Number(integerString);
+        document.write("<hr>Value: " + integerString + "<br> Type :" + (typeof integerString) + "<br>Value: " + num + "<br> Type :" + (typeof num));
+        //Question:9
+        var userInput = "peanuts"
+        document.write("<hr>userInput: " + userInput + "<br>Upper Case " + userInput.toUpperCase());
+        //Question:10
+        userInput = prompt("Enter your First Name");
+        var e =userInput.charAt(1);
+        var title = userInput.slice(0, 1);
+        title = title.toUpperCase();
+        title = userInput.replace(e, title);
+        document.write("<hr>userInput: " + userInput + "<br>Title Case " + title);
+        //Question:11
+        var num = 35.36;
+        num = num.toString();
+        var num1 = num.replace(".", "")
+        document.write("<hr>Number: " + num + "<br> Result" + num1);
+        //Question:12
+        var k = prompt("ENTER YOUR NAME"),
+         v = k.split("");
+        var array =["[","@" ,".",",","!","]"]
+        for (i=0;i<array.length;i++){
+            if (v===array[i]){
+                if (alphabets!==false)
+                alert(k);
+                alert("Please Enter valid username")}
+                break;}
+        //Question:13
+        var d = ["cake", "apple pie", "cookie", "chips", "patties"]
+        var l = prompt("Welcome to ABC Bakery.What do you wants to order Sir/Ma'am?")
+        l = l.toLowerCase();
+        for (var i = 1; i <= d.length; i++) {
+            if (l == d[i]) { document.write("<hr>" + l + " is available at index " + [i] + " in our bakery."); }
+            else { document.write("<hr>We are sorry." + l + " is not availabe in our bakery") }; break;
+        }
+        //Question:14
+        var password = prompt("Enter your password","fahad123")
+        if (password.length<6){alert("fah")}
+       else if (password.charCodeAt(0)>48&&password.charCodeAt(0)<57){alert("fa")}
+       for (i= 0 ; i<password.length;i++){
+        if (password.charCodeAt(i)>48&&password.charCodeAt(i)<57){
+       var num = true;
+       var alphabets = true;}}
+       if (num !== true && alphabets !== ture){alert("fah")};
+    //Question:15
+    var university = "University of Karachi";
+    var f = university.split("");
+    for (i=0 ; i<f.length ;i++){document.write("<br>"+f[i])}
+    //Question:16
+    var p = "Pakistan"
+    document.write("<hr>userInput: " + p + "<br>last character of input is : " + p.charAt( p.length-1));
+    //Question:17
+    var text = "The quick brown fox jumps over the lazy dog";
+    text1 = text.split(" ")
+    for (i=0; i<text.length; i++){if( text1=="the"){var match = 2}}
+    document.write("<hr>Text: " + text + "<br>:There are " );
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

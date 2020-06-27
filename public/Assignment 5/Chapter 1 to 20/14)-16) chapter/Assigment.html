@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+// Question:1
+
+// Question:2
+
+// Question:3
+var l =["fahad"]
+// Question:4
+var p =[23]
+//  Question:5
+var k =[]
+// Question:6
+var o =["karachi",1,25,2]
+// Question:7
+var qualifiations = ["SSC"," HSC"," BCS","BS"," BCOM"," MS"," M. Phil."," PhD"]
+document.write("<h1> Qualifiations </h1><br><br><ol><li>"+ qualifiations[ 0]+"</li><br><li>"+ qualifiations[ 1] +"</li><br><li>"+ qualifiations[ 2] +"</li><br><li>"+ qualifiations[ 3] +"</li><br><li>"+ qualifiations[ 4] +"</li><br><li>"+ qualifiations[ 5] +"</li><br><li>"+ qualifiations[ 6] +"</li><br><li>"+ qualifiations[ 7] +"</li></ol>");
+// Question:8
+var h=["Michael","John","Tony"];
+var t=[240,360,480];
+document.write("<hr> Score of "+h[0] +"is "+t[0] +".Percentage :"+(t[0]/500)*100 +"%<br> Score of "+h[1] +"is "+t[1] +".Percentage :"+(t[1]/500)*100 +"%<br> Score of "+h[2] +"is "+t[2] +".Percentage :"+(t[2]/500)*100 +'%');
+// Question:9.
+ 
+var colour=["Green","Blue","Black","Purple"]
+document.write("<hr>Colour names: <br>"+colour);
+// a
+var update=prompt("What one colour do (you want in that list?")
+colour.unshift(update);
+document.write("<br>Updated Array:<br>"+colour);
+// b
+        var update1=prompt("What colour do you want to add at the end of list?")
+        colour.push(update1);
+        document.write("<br>Updated array:<br>"+colour);
+        // c
+        var d= prompt("Enter two more colour")
+        colour.unshift(d);
+        document.write("<br>Updated array after adding 2 colours:<br>"+colour);
+        // d
+        colour.shift();
+        document.write("<br>Upated array after removing first colour:<br>"+colour);
+        // e
+        colour.pop();
+        document.write("<br>updated array after removing last colour:<br>"+colour);
+        // f
+        var update2=+prompt("At what index do you want a colour?")
+        var update3=prompt("What colour do you want to add?")
+        colour.splice(update2,0,update3);
+        document.write("<br>At what index do you want a colour?<br>"+colour);
+        // g
+        var update4=+prompt("At what index do you want to delete colours?");
+        var update5=+prompt("How many colours do you want to delete?");
+        colour.splice(update4,update5);
+        document.write("<br>At what index do you want to delete colours?<br>"+colour); 
+// Question:10
+var h =[230,320,480,120];
+document.write("<hr>Scores of Students : " + h)
+h.sort();
+document.write("<br>Ordered Scores of Students : " + h);
+// Question:11
+var city = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+var Selected = city.slice(2,4);
+document.write("<hr> Cities list : <br>" + city);
+document.write("<br><br>Selected cities list : <br>" + Selected);
+// Question:12
+var a=["This","is ","my","cat"];
+document.write("<hr>Array : <br>"+a);
+document.write("<br><br>String<br>"+ a.join(" "));
+// Question:13
+var devices = ["Keyboard","mouse","printer","monitor"];
+document.write("<hr>Devices<br>"+devices);
+var a =devices.shift(),m =devices.shift(),d="Out : ",j=devices.shift(),l=devices.shift();
+document.write("<br>"+d+"<br>"+a+"<br>"+"<br>"+d+"<br>"+m+"<br>"+"<br>"+d+"<br>"+j+"<br>"+"<br>"+d+"<br>"+l+"<br>");
+// Question:14
+var devices = ["Keyboard","mouse","printer","monitor"];
+document.write("<hr>Devices<br>"+devices) ;
+var a =devices.pop(),m =devices.pop(),d="Out : ",j=devices.pop(),l=devices.pop();
+document.write("<br>"+d+"<br>"+a+"<br>"+"<br>"+d+"<br>"+m+"<br>"+"<br>"+d+"<br>"+j+"<br>"+"<br>"+d+"<br>"+l+"<br>");
+// Question:15
+var phone=["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+document.write("<hr>"+phone);
+document.write("<br><br><select><option>"+phone[0] +"</option><option>"+phone[1] +"</option><option>"+phone[2]+"</option><option>"+phone[3] +"</option><option>"+phone[4] +"</option><option>"+phone[5] +"</option></select>");
+
+
+
+</script>
+    <title>ARRAYS</title>
+</head>
+<body>
+</body>
+</html>
