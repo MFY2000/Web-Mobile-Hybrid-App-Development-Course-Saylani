@@ -1444,16 +1444,17 @@ h3 {
 /* line 44, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 80px;
+  font-size: 65px;
   text-transform: capitalize;
   font-weight: 300;
-  line-height: 90px;
+  /* line-height: 90px; */
   color: #fff;
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
 }
 
 /* line 52, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_slider.scss */
 .slider_area .single_slider .slider_text h3 span {
+  font-size: 50px;
   color: #DB9A64;
 }
 
