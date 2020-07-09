@@ -1,4 +1,5 @@
 log()
+
 function log(){
   if(localStorage.getItem("login") == null){
     localStorage.setItem("login","")}}
@@ -44,8 +45,8 @@ function log(){
 function showfavourite(){
   var array = localStorage.getItem("favourite");
   if(array!=null){
-  array = JSON.parse(array)
-    arr = array.length;
+  array = JSON.parse(array);
+  arr = array.length;
   arr = "FAVOURITES<sup id='sup'>"+arr+"</sup>"
     document.getElementById("sup").innerHTML= "";
     document.getElementById("sup").innerHTML= arr;
@@ -81,17 +82,15 @@ for(var i = 0;i <array.length;i++){
 
   function fahad2(id) {
     var array = JSON.parse(localStorage.getItem("favourite"));
-   if(array.indexOf(id) != -1){
-    var g = document.getElementById(id).style.color = "white"
-    var index = array.indexOf(id); 
-    console.log(index) ;
-   array.splice(index,1)
-    console.log(array) ; 
-     arr = array.length;
-     arr = "FAVOURITES<sup id='sup'>"+arr+"</sup>"
-     document.getElementById("sup").innerHTML= "" 
-     document.getElementById("sup").innerHTML= arr
-   var array = JSON.stringify(array);
+    if(array.indexOf(id) != -1){
+      var g = document.getElementById(id).style.color = "white"
+      var index = array.indexOf(id); 
+      array.splice(index,1)
+      arr = array.length;
+      arr = "FAVOURITES<sup id='sup'>"+arr+"</sup>"
+      document.getElementById("sup").innerHTML= "" 
+      document.getElementById("sup").innerHTML= arr
+    var array = JSON.stringify(array);
 localStorage.setItem("favourite",array)
    }
   }  

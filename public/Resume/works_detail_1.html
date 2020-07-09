@@ -234,9 +234,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/main.js"></script>
 
     <script>
-        var name = document.getElementById("Name"),
-        todisplay = document.getElementById("todisplay"),
+        var obj = [["",""],["",""]];
+
+        var name = getElement("Name")
+        todisplay = getElement("todisplay"),
+        Overview = getElement("Overview"),
+        Problem = getElement("Problem"),
+        Solution = getElement("Solution"),
+        link = getElement("link");
+
+        var key = localStorage.getItem()
         
+        function getElement(params) {
+            return (document.getElementById(params));
+        }
 
     </script>
 

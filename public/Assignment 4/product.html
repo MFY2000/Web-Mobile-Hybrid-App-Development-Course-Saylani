@@ -267,12 +267,12 @@ var obj =[
 
 var h = localStorage.getItem("any")
 
-document.getElementById("button").innerHTML= "<button onclick='fahad("+h +")'><i class='fas fa-heart' id="+h +"></i></button><button onclick='fahad2("+h +")'><i class='fas fa-thumbs-up fa-flip-vertical'></i></button>";
+document.getElementById("button").innerHTML= "<button onclick='fahad("+h+")'><i class='fas fa-heart' id="+h +"></i></button><button onclick='fahad2("+h +")'><i class='fas fa-thumbs-up fa-flip-vertical'></i></button>";
 
 
 document.getElementById("title").innerHTML= obj[h].name;
 var v = document.getElementById("h1").innerHTML = obj[h].name,
-s =document.getElementById("image").setAttribute("src", obj[h].src );
+s=document.getElementById("image").setAttribute("src", obj[h].src );
 c=document.getElementById("p2").innerHTML ="price : $ " + obj[h].price + " dollar";
 c=document.getElementById("prize").innerHTML ="$ " + obj[h].price + " dollar";
 t=document.getElementById("s1").innerText = obj[h].s
