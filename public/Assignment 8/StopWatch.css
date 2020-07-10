@@ -58,3 +58,34 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+
+#time {
+    display: none;
+    text-align: center;
+    font: bold 28px arial;
+    color: #cc0000; 
+    text-shadow: 2px 2px 3px #ccc;
+}
+#controls {
+    width: 18%;
+    margin-left: 41%;
+    padding: 10px;
+    background: linear-gradient(to right, #00f7ff, #b5ff60) !important;
+    border: 1px solid rgba(0, 92, 255, 0.8);
+
+}
+
+input {
+    font-weight: bold;
+    padding: 3px 3px 0;
+}
+
+#stopwatch {
+}
+
+body { 
+    font-family: arial;
+    text-align: center;
+    display: block;
+    }   
