@@ -18,6 +18,7 @@ class Stopwatch {
             this.running = true;
             requestAnimationFrame(this.step.bind(this));
         }
+        document.getElementById("PLAY_STOP").value = 
     }
     
     lap() {

@@ -14,7 +14,11 @@
     text-align: center;
   }
   
-  
+  .button {
+    padding: .5em;
+    font-size: 4vw;
+    margin: 0 0.1em;
+  }
   
   .button:first-child {
       margin-left: 0;
