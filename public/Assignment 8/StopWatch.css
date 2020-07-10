@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    background: black;
+    color: red;
+    font-family: Menlo;
+  }
+  
+  .controls {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  .button:first-child {
+      margin-left: 0;
+  }
+  
+  .button:last-child {
+      margin-right: 0;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+  
+  .stopwatch {
+    top: 1em;
+    font-size: 10vw;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .results {
+    border-color: lime;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
