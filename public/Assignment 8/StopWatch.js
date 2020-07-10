@@ -13,12 +13,13 @@ class Stopwatch {
     }
     
     start() {
+        document.getElementById("PLAY_STOP").innerHTML = "<img onClick='stopwatch.stop();' height='50px' width='50px' src='../Images/Assignment 8/STOP.png' alt='Stop'>"
+
         if (!this.time) this.time = performance.now();
         if (!this.running) {
             this.running = true;
             requestAnimationFrame(this.step.bind(this));
         }
-        document.getElementById("PLAY_STOP").value = 
     }
     
     lap() {
@@ -29,6 +30,7 @@ class Stopwatch {
     }
     
     stop() {
+        document.getElementById("PLAY_STOP").innerHTML = "<img onClick='stopwatch.start();' height='50px' width='50px' src='../Images/Assignment 8/play-vector-png-.png' alt='Stop'>"
         this.running = false;
         this.time = null;
     }
@@ -39,6 +41,7 @@ class Stopwatch {
             this.running = true;
             requestAnimationFrame(this.step.bind(this));
         }
+        // this.stop();
         this.reset();
     }
     
