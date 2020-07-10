@@ -23,10 +23,10 @@ class Stopwatch {
     }
     
     lap() {
-        let times = this.times;
-        let li = document.createElement('li');
-        li.innerText = this.format(times);
-        this.results.appendChild(li);
+        let time = this.times;
+        this.laps.push(this.times);
+        let temp = `<tr><th scope="row">${this.laps.length}</th><td>Lap no ${this.laps.length}</td><td>${this.format(time)}</td></tr>`
+        document.getElementById("results").innerHTML += (temp);
     }
     
     stop() {
@@ -37,15 +37,13 @@ class Stopwatch {
 
     restart() {
         if (!this.time) this.time = performance.now();
-        if (!this.running) {
-            this.running = true;
-            requestAnimationFrame(this.step.bind(this));
-        }
-        // this.stop();
+        
+        this.start();
         this.reset();
     }
     
     clear() {
+        this.laps = [];
         clearChildren(this.results);
     }
     
