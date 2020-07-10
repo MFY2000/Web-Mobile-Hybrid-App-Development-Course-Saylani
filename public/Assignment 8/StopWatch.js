@@ -91,8 +91,8 @@ function pad0(value, count) {
 }
 
 function clearChildren(node) {
-    while (node.lastChild)
-        node.removeChild(node.lastChild);
+    document.getElementById("results").innerHTML = null;
+    
 }
 
 let stopwatch = new Stopwatch(

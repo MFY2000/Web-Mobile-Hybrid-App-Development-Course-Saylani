@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   
   html {
-    background: black;
+    background: white;
     color: red;
     font-family: Menlo;
   }
@@ -20,6 +21,13 @@
     margin: 0 0.1em;
   }
   
+  .button_right {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: right; */
+    /* align-self: baseline; */
+}
+
   .button:first-child {
       margin-left: 0;
   }
