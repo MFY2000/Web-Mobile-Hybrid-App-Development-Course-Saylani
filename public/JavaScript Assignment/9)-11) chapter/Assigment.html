@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+// Question:1
+var x = prompt("City ?");
+if(x === "Karachi"){alert("Welcome to city of lights");}
+// Question:2
+var x = prompt("gender");
+if(x === "Male"){alert("Good Morning Sir")};
+if( x=== "Female"){alert("Good Morning Ma’am")};
+// Question:3
+var o = prompt("road traffic signal ");
+if(o === "Red"){alert("Must Stop");}
+if(o === "Yellow"){alert(" Ready to move");}
+if(o === "Green"){alert("Move now");}
+// Question:4
+var b = prompt("Remaining fuel in car (in litres)")
+if ( b < 0.25){alert("Please refill the fuel in your car")};
+
+// Question:5
+var a = 4;
+if (++a === 5){
+alert("given condition for variable a is true");
+}
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+    alert("condition 2 is true");
+}
+if (++c < 14){
+alert("condition 3 is true");
+}
+if(c === 14){
+alert("condition 4 is true");
+}
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+if (true){
+alert("True");
+}
+if (false){
+alert("False");}
+if("car" < "cat"){
+alert("car is smaller than cat");
+}
+// Question:6
+
+var w = +prompt("Marks") , p = +prompt("Marks"),o = +prompt("Marks"),v=(w+p+o), g = (v/300)*100;
+document.write("<h1>Marks Sheet</h1> <br>Total marks : 300 <br>Marks obtained : "+ v +"<br> Percentage : "+ g +" %");
+if (g >= 90){document.write(" <br> Grade : A-one <br>Remarks : Excellent");}
+else if (g > 80){document.write(" <br> Grade : A <br>Remarks : Good");}
+else if (g > 70){document.write(" <br> Grade : B <br>Remarks :You need to improve ");}
+else if (g > 60){document.write(" <br> Grade : Fail <br>Remarks : Soory");}
+// Question:7
+var p=6
+var y = prompt("Enter a number");
+if (y == p){alert("Bingo! Correct answer");}
+else if (y== p+1){alert("Close enough to the correct answer")}
+// Question:8
+var e = prompt("Enter a number");
+if ( e % 3== 0  ){alert("Hello World");}
+// Question:9
+var o = prompt("Enter a number");
+if ( e % 2== 0  ){alert("even number");}
+else{alert("odd number") }
+// Question:10
+var r= prompt("Temperature");
+if ( r > 40){alert("It is too hot outside.");}
+else if ( r > 30){alert("The Weather today is Normal.");}
+else if ( r > 20){alert("Today's Weather is cool");}
+else if ( r > 10){alert("OMG! Today's weather is cool");}
+// Question:11
+var l = +prompt(" First number"),u = +prompt(" Second number"),y= prompt("Operation (+, -, *, /, %)");
+if (y === "+" ){alert (l+u)}
+else if (y === "%" ){alert (l%u)}
+else if (y === "-" ){alert (l-u)}
+else if (y === "/" ){alert (l/u)}
+else if (y === "*" ){alert (l*u)}
+
+</script>
+    <title>USER INPUT & CONDITION STATEMENT</title>
+</head>
+<body>
+    
+</body>
+</html>

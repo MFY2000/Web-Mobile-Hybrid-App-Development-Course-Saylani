@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <button onclick="power()" class="btn btn-primary" id="btnn">SQUAREROOT</button><br><br>
+    <button onclick="promtforLeapyear()" class="btn btn-primary">Leap Year</button><br><br>
+    <button onclick="area()" class="btn btn-primary" id="btnn">Triangle area</button><br><br>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function power() {
+
+            var num1 = prompt();
+            var num2 = prompt();
+            var i, value;
+            value = num1;
+            for (i = 1; i < num2; i++) {
+                value = value * num1;
+            }
+            if (value != null) {
+                document.getElementById("demo").innerHTML = value;
+            }
+        }
+
+        function promtforLeapyear() {
+            var num = prompt();
+            leapYear(num);
+            if (leapYear(num) === true) {
+                document.getElementById("demo2").innerHTML = num;
+                alert("Leap year");
+            } else {
+                document.getElementById("demo2").innerHTML = "Not leap year";
+                alert("Not Leap year");
+            }
+        }
+
+        function leapYear(year) {
+            return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+        }
+
+        var S;
+
+        function area() {
+            var area;
+            var a = prompt();
+            var b = prompt();
+            var c = prompt();
+            Magnitude(a, b, c);
+            area = S * (S - a) * (S - b) * (S - c);
+            document.getElementById("demo3").innerHTML = area;
+            alert(area);
+        }
+
+        function Magnitude(a, b, c) {
+            S = (a + b + c) / 2;
+        }
+        // function aletrsforTrangle(){
+        //     alert("Area of triangle is : ",area);
+        // }
+    </script>
+</body>
+
+</html>

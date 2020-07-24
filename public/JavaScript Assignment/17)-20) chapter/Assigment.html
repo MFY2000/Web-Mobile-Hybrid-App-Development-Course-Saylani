@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        // Question:1
+
+        // Question:2
+
+        // Question:3
+        for (var k = 1; k <= 10; k++)
+            document.write([k] + "<br>")
+        // Question:4
+        var num = prompt("Enter a Number to show multiplication table");
+        var p = prompt("Enter the length of multiplication table");
+        document.write("<hr> multiplication table of " + num + "Lenght" + p + "<br><br> ");
+        for (var a = 1; a <= num; a++) {
+            document.write(p + "*" + [a] + "=" + (p * [a]) + "<br>");
+        }
+        // Question:5
+        var fruits = ["apple", "banana", "mango", "orange", "strawberry"]; document.write("<hr>" + fruits + "<br>")
+        for (var t = 0; t < fruits.length; t++) {
+            document.write("<br> Element at index " + [t] + " is " + fruits[t] + "");
+        }
+        // Question:6
+        document.write("<hr><h1>Counting:</h1><br>")
+        for (var o = 1; o <= 15; o++) { document.write(o + ",") }
+        document.write("<br><h1>ReverseCounting:</h1><br>")
+        var num = 10;
+        for (var o = 0; o <= 10; o++) { document.write((num - o) + ",") }
+        document.write("<br><h1>Even:</h1><br>")
+        for (var o = 0; o <= 20; o += 2) { document.write(o + ",") }
+        document.write("<br><h1>odd</h1><br>")
+        for (var o = 1; o <= 20; o += 2) { document.write(o + ",") }
+        document.write("<br><h1>Series:</h1><br>")
+        for (var o = 2; o <= 20; o += 2) { document.write(o + "K,") }
+        // Question:7
+        var d = ["cake", "apple pie", "cookie", "chips", "patties"]
+        var l = prompt("Welcome to ABC Bakery.What do you wants to order Sir/Ma'am?")
+        for (var i = 1; i <= d.length; i++) {
+            if (l == d[i]) { document.write("<hr>" + l + " is available at index " + [i] + " in our bakery."); }
+            else { document.write("<hr>We are sorry." + l + " is not availabe in our bakery") }; break;
+        }
+        // Question:8
+        var number = [24, 53, 78, 91, 12]
+        var num = number.sort()
+        var smallest = num[0];
+        for (i = 0; i < number.length; i++) {
+            if (number[i] <= smallest) {
+                smallest = number[i];
+            }
+        }
+        document.write('<hr>Array items:' + number + "<br>The Largest number is " + smallest+"<hr>");
+        // Question :9
+        var smallest = num[4];
+        for (i = 0; i < number.length; i++) {
+            if (number[i] >= smallest) {
+                smallest = number[i];
+            }
+        }
+        document.write('<hr>Array items:' + number + "<br>The smallest number is" + smallest + "<hr>")
+        // Question :10
+        document.write("<hr>")
+        for (var i = 5; i <= 100; i += 5) { document.write(i + ",") }
+        // Question :11
+        document.write("<hr>");
+        var scores = [12, 45, 3, 22, 34, 50];
+        var myCity = +prompt("Enter a number");
+        for (var i = 0; i < scores.length; i++) {
+            document.write(scores[i] + ",");
+            if (myCity == scores[i]) { break; }
+        }
+        // Question:12
+        document.write("<hr>")
+        for (var i = 0; i <= 20; i++) {
+            if (i % 2 == 0) { document.write([i] + "is odd<br> "); }
+            else { document.write([i] + "is even<br>") }
+        }
+        // Question:13
+        // Question:14
+        for (var h = '*******'; h <= 7; h--);
+        document.write("<hr>" + [h])
+
+
+
+    </script>
+    <title>17-20 Chapter</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
