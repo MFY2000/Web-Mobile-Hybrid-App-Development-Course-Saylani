@@ -5,6 +5,7 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
+const heading = document.getElementById("Heading");
 
 // Classes names
 const CHECK = "fa-check-circle";
@@ -22,15 +23,14 @@ if(data){
     LIST = JSON.parse(data);
     id = LIST.length; // set the id to the last one in the list
     loadList(LIST); // load the list to the user interface
+    var items = "Todo list";
 }else{
     // if data isn't empty
     LIST = [];
     id = 0;
-    var items = "<h1 >No thing to show</h1>"
-    const position = "beforeend";
-    console.log(items,list);
-    list.insertAdjacentHTML(position, items);
+    var items = "No item in the list";
 }
+heading.innerHTML = items;
 
 // load items to the user's interface
 function loadList(array){
@@ -70,6 +70,9 @@ function addToDo(toDo, id, done, trash){
     const position = "beforeend";
     
     list.insertAdjacentHTML(position, item);
+    var items = "Todo list";
+    if(LIST.length == 0)
+        heading.innerHTML = items;
 }
 
 // add an item to the list user the enter key
@@ -110,8 +113,12 @@ function completeToDo(element){
 // remove to do
 function removeToDo(element){
     element.parentNode.parentNode.removeChild(element.parentNode);
-    
     LIST[element.id].trash = true;
+    
+    
+    if(LIST.length == 0)
+        localStorage.clear();
+        
 }
 
 // target the items created dynamically
