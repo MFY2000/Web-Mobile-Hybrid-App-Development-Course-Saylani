@@ -26,6 +26,10 @@ if(data){
     // if data isn't empty
     LIST = [];
     id = 0;
+    var items = "<h1 >No thing to show</h1>"
+    const position = "beforeend";
+    console.log(items,list);
+    list.insertAdjacentHTML(position, items);
 }
 
 // load items to the user's interface

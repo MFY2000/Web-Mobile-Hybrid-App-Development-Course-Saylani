@@ -9,15 +9,15 @@ body{
 /* ------------ container ------------ */
 .container{
     padding:10px;
-    /* width:380px; */
+    width:98%;
     margin:0 auto;
 }
 
 /* ------------ header ------------ */
 .header{
     /* width: 380px; */
-    height:200px;
-    background-image: url('../img/bg2.jpg');
+    height:40vh;
+    background-image: url('../img/18655.jpg');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -157,7 +157,10 @@ body{
     font-size: 20px;
 }
 
-
+h1{
+    text-align: center;
+    align-items: center;
+}
 
 
 
