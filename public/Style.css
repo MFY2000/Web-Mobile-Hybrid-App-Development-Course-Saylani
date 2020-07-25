@@ -6785,7 +6785,7 @@ body{
     position: absolute;
     bottom: 10px;
     width: 100%;
-    content: attr(data-part) "/" attr(data-count);
+    content: attr(data-part) "./" attr(data-count);
     text-align: center;
     display: block;
   }

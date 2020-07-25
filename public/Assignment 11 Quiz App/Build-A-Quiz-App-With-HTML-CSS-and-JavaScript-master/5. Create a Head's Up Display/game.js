@@ -51,7 +51,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     //go to the end page
-    return window.location.assign("/end.html");
+    return window.location.assign("./end.html");
   }
   questionCounter++;
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
