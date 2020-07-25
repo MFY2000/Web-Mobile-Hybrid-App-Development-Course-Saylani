@@ -3,6 +3,7 @@
   font-size: 62.5%;
 }
 
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,6 +11,15 @@
   padding: 0;
   color: #333;
 }
+
+body{
+  background-image: url('../images/background.jpg');
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
 
 h1,
 h2,
