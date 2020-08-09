@@ -62,7 +62,7 @@ startGame = () => {
 
 getNewQuestion = () => {
     console.log()
-    var url = "C:/Users/MFY/Desktop/Web-Mobile-Hybrid-App-Development-Course-Saylani/public/Assignment 11 Quiz App/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript-master/12. Create a Spinning Loader/end.html"
+    var url = "/end.html"
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
