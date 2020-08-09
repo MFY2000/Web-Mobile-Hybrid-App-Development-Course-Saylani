@@ -663,6 +663,9 @@ h3 {
     font-size: 36px;
     line-height: 42px;
   }
+  #tosetWidth{
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
