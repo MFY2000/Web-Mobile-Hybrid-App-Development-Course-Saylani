@@ -3,6 +3,13 @@ body{
     justify-content: center !important;
 }
 
+body{
+  background-image: url('Images/Main/WoodBackground54342.jpg');
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
 
 .NoteDetails__note-detail___2OWTosC5Kq {
     position: absolute;
